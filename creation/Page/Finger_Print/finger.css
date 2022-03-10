@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background:linear-gradient(to bottom, green, black);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.head_bar{
+    display: inline-block;
+    height: max-content;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    text-shadow: 10px 10px 50px black;
+    border-bottom: none;
+    padding: 1%;
+    margin-bottom: 0%;
+}
+.titre{
+    font-size: 30px;
+    text-align: center;
+    width:100%;
+    height:auto;
+ 
+}
+.head_bar a{
+    background: rgba(255, 255, 255, 0.281);
+    height: auto;
+    padding:10px;
+    float: left;
+    margin-left: 3%;
+    margin-bottom: 5%;
+    font-size: 15px;
+    border-top: 3px solid rgba(255, 255, 0, 0.342);
+    border-radius: 15px;
+    text-decoration: none;
+ 
+}
+a .btn{
+        font-size: 15px;
+        font-weight: 800;
+        color: black;
+}
+
+
+.corp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height:100vh;
+    background: #111;
+}
+
+.scan{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scan .fingerprint{
+    position: relative;
+    width: 300px;
+    height: 380px;
+    background: url(fingerPrint_01.png);
+    background-size: 300px;
+}
+.scan .fingerprint::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(fingerPrint_02.png);
+    background-size: 300px;
+    animation:animate 4s ease-in-out infinite;
+}
+
+@keyframes animate{
+    0%,100%{
+        height: 0%;
+    }
+    50%{
+        height: 100%;
+    }
+}
+
+.scan .fingerprint::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:8px;
+    background: #3fefef;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #3fefef);
+    animation:animat_line 4s ease-in-out infinite;
+}
+@keyframes animat_line{
+    0%,100%{
+        top: 0%;
+    }
+    50%{
+        top: 100%;
+    }
+}
+
+.scan h3{
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin-top:20px ;
+    color: #3fefef;
+    filter:drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #3fefef); 
+    animation: animate_texte 0.5s steps(1) infinite;
+
+}
+@keyframes animate_texte{
+    0%,100%{
+        opacity:0 ;
+    }
+    50%{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+body{
+    
+    background:linear-gradient(to bottom, green, black);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.head_bar{
+    display: inline-block;
+    height: max-content;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    text-shadow: 10px 10px 50px black;
+    border-bottom: none;
+    box-shadow: 0px 0px 90px 0px;
+    padding: 1%;
+    margin-bottom: 5%;
+}
+.titre{
+    font-size: 30px;
+    text-align: center;
+    width:100%;
+    height:auto;
+ 
+}
+.head_bar a{
+    background: rgba(255, 255, 255, 0.281);
+    height: auto;
+    padding:10px;
+    float: left;
+    margin-left: 5%;
+    font-size: 15px;
+    border-top: 3px solid rgba(255, 255, 0, 0.342);
+    border-radius: 15px;
+    text-decoration: none;
+ 
+}
+a .btn{
+        font-size: 15px;
+        font-weight: 800;
+        color: black;
+}

@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    height:100%;
+    box-sizing: border-box;
+ 
+}
+
+body{
+    
+    background:linear-gradient(to bottom, green, black);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
+.head_bar{
+    display: inline-block;
+    height: max-content;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    text-shadow: 10px 10px 50px black;
+    border-bottom: none;
+    box-shadow: 0px 0px 90px 0px;
+    padding: 1%;
+ 
+}
+.titre{
+    font-size: 30px;
+    text-align: center;
+    width:100%;
+    height:auto;
+ 
+}
+.head_bar a{
+    background: rgba(255, 255, 255, 0.281);
+    height: auto;
+    padding:10px;
+    float: left;
+    margin-left: 5%;
+    font-size: 15px;
+    border-top: 3px solid rgba(255, 255, 0, 0.342);
+    border-radius: 15px;
+    text-decoration: none;
+ 
+}
+a .btn{
+        font-size: 15px;
+        font-weight: 800;
+        color: black;
+}
+
+
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 99.9vh;
+    display: flex;
+    background: #00ff22;
+}
+
+.container ::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(90deg, #fff1 0px, #fff1 1px, transparent 1px, transparent 10px),
+    repeating-linear-gradient(0deg, #fff1 0px, #fff1 1px, transparent 1px, transparent 10px);
+    background-size: 10px 10px;
+}   
+
+.container .card{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.container .card:hover{
+    flex-grow: 3;
+    background: #1a1a1a;
+}
+
+.container .card ion-icon {
+    font-size:15vw ;
+    color:#000000;
+    transition: 0.5s ease-in-out;
+
+}
+
+.container .card:hover ion-icon{
+    color: #fff;
+    font-size:25vw ;
+    filter:drop-shadow(0 0 10px #00ff22)
+    drop-shadow(0 0 30px #111)
+    drop-shadow(0 0 60px #00ff22)
+    drop-shadow(0 0 100px #111)
+    drop-shadow(0 0 150px #00ff22);
+}
