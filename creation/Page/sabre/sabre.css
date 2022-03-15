@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+body{
+    
+    background:linear-gradient(to bottom, green, black);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.head_bar{
+    display: inline-block;
+    height: max-content;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    text-shadow: 10px 10px 50px black;
+    border-bottom: none;
+    box-shadow: 0px 0px 90px 0px;
+    padding: 1%;
+    margin-bottom: 5%;
+}
+.titre{
+    font-size: 30px;
+    text-align: center;
+    width:100%;
+    height:auto;
+ 
+}
+.head_bar a{
+    background: rgba(255, 255, 255, 0.281);
+    height: auto;
+    padding:10px;
+    float: left;
+    margin-left: 5%;
+    font-size: 15px;
+    border-top: 3px solid rgba(255, 255, 0, 0.342);
+    border-radius: 15px;
+    text-decoration: none;
+ 
+}
+a .btn{
+        font-size: 15px;
+        font-weight: 800;
+        color: black;
+}
+
+
+.corps {
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: rgb(53, 52, 52);
+    z-index: 0;
+}
+.base{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 30px;
+    background: black;
+    width: 150px;
+    height:300px;
+    border-radius: 15%;
+}
+
+.on{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    height: 50px;
+    width: 50px;
+    border-radius:50%;
+}
+
+.on_btn{
+    background-color: #a1a1a1;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+
+
+
+.laser{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 500px;
+    width: 80px;
+    background-color: rgb(37, 37, 228);
+    bottom: 300px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px; 
+   /* filter: drop-shadow(0 0 10px rgb(37, 37, 228))
+    drop-shadow(0 0 20px rgb(37, 37, 228))
+    drop-shadow(0 0 30px rgb(37, 37, 228))
+    drop-shadow(0 0 40px rgb(37, 37, 228));*/
+    animation:animate_sha 1s steps(10) infinite ;
+}
+
+@keyframes animate_sha {
+    0%,100%{
+    filter:drop-shadow(0 0 10px rgb(37, 37, 228))
+    drop-shadow(0 0 50px rgb(151, 151, 241))
+    drop-shadow(0 0 90px rgb(37, 37, 228))
+    drop-shadow(0 0 130px rgb(151, 151, 241));
+    }
+
+    50%{
+    filter:none;
+    }
+}
+
+
+    .on:active #laser{
+       display: flex;
+
+}
+
+.line{
+    position: absolute;
+    background-color: rgba(83, 83, 226, 0.787);
+    height: 500px;
+    width: 15px;
+    animation:animate 1s steps(10) infinite;
+}
+@keyframes animate{
+    0%,100%{
+        background-color: rgb(76, 76, 238);
+    }
+
+    50%{
+        background-color: rgb(93, 93, 238);
+    }
+}
